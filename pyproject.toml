@@ -6,7 +6,7 @@ authors = ["megahomyak <g.megahomyak@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8"
 opencv-python = "^4.8.1.78"
 mediapipe = "^0.10.8"
 

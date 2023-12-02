@@ -5,7 +5,7 @@ import cv2
 def _distance(landmark1, landmark2):
     return math.sqrt((landmark1.x - landmark2.x) ** 2 + (landmark1.y - landmark2.y) ** 2)
 
-class CameraIsNotWorking(Exception): pass
+class CameraIsNotAccessible(Exception): pass
 
 class FuckOff:
     def __init__(self, camera_index=0):
@@ -28,7 +28,7 @@ class FuckOff:
         """
         is_success, frame = self._video_capture.read()
         if not is_success:
-            raise CameraIsNotWorking()
+            raise CameraIsNotAccessible()
         frame.flags.writeable = False # Makes it faster, from what I've heard
         output = self._hands_recognizer.process(frame)
         if output.multi_hand_landmarks:

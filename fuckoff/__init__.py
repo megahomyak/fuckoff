@@ -1,1 +1,1 @@
-from .fuckoff import FuckOff, CameraIsNotWorking
+from .fuckoff import FuckOff, CameraIsNotAccessible
