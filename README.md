@@ -8,13 +8,5 @@ Recognizes when you show a middle finger to the camera
 
 ## Usage
 
-```python
-from fuckoff import FuckOff
-
-with FuckOff() as fuckoff:
-    while True:
-        fuckoff.wait()
-        print("Middle finger detected!")
-```
-
+* Check out the [example.py](example.py) file for a usage example
 * Be aware that when using `FuckOff` and your camera is not working, a `CameraIsNotWorking` exception will be thrown
